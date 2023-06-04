@@ -4,22 +4,29 @@ import styled from "styled-components";
 export const Sidebar = () => {
   return (
     <StyledSidebar>
-      <h1>Туры по Кыргызстану</h1>
+      <StyledSidebarContent>
+        <h1>Туры по Кыргызстану</h1>
 
-      <p>сообщения</p>
-      <p>туры</p>
-      <p>отзывы</p>
-      <p>рейтинг туров</p>
+        <p>сообщения</p>
+        <p>туры</p>
+        <p>отзывы</p>
+        <p>рейтинг туров</p>
+      </StyledSidebarContent>
     </StyledSidebar>
   );
 };
 
-const StyledSidebar = styled.div`
+const StyledSidebar = styled.section`
+  padding: 50px 10px;
+  background-color: #333;
+  position: relative;
+`;
+
+const StyledSidebarContent = styled.section`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 50px 10px;
-  background-color: #333;
+  position: sticky;
 
   & > h1 {
     font-size: 20px;

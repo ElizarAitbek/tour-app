@@ -1,14 +1,9 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { deleteTour } from "../store/slices/tour-slice";
-import { useSearchParams } from "react-router-dom";
-import { TourForm } from "./TourForm";
-import { EditTourModal } from "./EditTourModal";
 
-export const TourList = () => {
-  const { tours } = useSelector((state) => state.tours);
-
+export const TourList = ({ tours }) => {
   const dispatch = useDispatch();
 
   const deleteTourHandler = (id) => {
