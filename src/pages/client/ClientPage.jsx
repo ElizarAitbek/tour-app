@@ -6,7 +6,7 @@ import { DUMMY_TOURS as tours } from "../../utils/constants";
 export const ClientPage = () => {
   return (
     <div>
-      <TourList tours={tours} />
+      <TourList user tours={tours} />
     </div>
   );
 };

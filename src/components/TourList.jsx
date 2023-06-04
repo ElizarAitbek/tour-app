@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { deleteTour } from "../store/slices/tour-slice";
 
-export const TourList = ({ tours }) => {
+export const TourList = ({ tours, user }) => {
   const dispatch = useDispatch();
 
   const deleteTourHandler = (id) => {
@@ -22,9 +22,13 @@ export const TourList = ({ tours }) => {
               <h3>{tour.title}</h3>
               <p>{tour.description}</p>
               <span>{tour.price} сом</span>
-              <button onClick={() => deleteTourHandler(tour.id)}>
-                Удалить
-              </button>
+              {user ? (
+                <></>
+              ) : (
+                <button onClick={() => deleteTourHandler(tour.id)}>
+                  Удалить
+                </button>
+              )}
             </TourCard>
           );
         })
