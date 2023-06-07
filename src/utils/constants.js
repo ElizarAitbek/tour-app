@@ -10,14 +10,14 @@ export const DUMMY_TOURS = [
     image: FirstImage,
     title: "Tour to the Mountain",
     description: "Tour 1",
-    price: 19.99,
+    price: 19.99
   },
   {
     id: "d2",
     image: SecondImage,
     title: "Victory peak",
     description: "Tour 1",
-    price: 19.99,
+    price: 19.99
   },
 
   {
@@ -25,20 +25,20 @@ export const DUMMY_TOURS = [
     image: ThirdImage,
     title: "Manas Peak",
     description: "Tour 1",
-    price: 19.99,
+    price: 19.99
   },
   {
     id: "d4",
     image: FourthImage,
     title: "Osh walley",
     description: "Tour 1",
-    price: 19.99,
+    price: 19.99
   },
   {
     id: "d5",
     image: FifthImage,
     title: "Osh walley",
     description: "Tour 1",
-    price: 19.99,
-  },
+    price: 19.99
+  }
 ];

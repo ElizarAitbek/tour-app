@@ -4,7 +4,7 @@ export const AuthSlice = createSlice({
   name: "auth",
   initialState: {
     userEmail: "",
-    role: "",
+    role: ""
   },
   reducers: {
     setUser: (state, action) => {
@@ -18,8 +18,8 @@ export const AuthSlice = createSlice({
       } else {
         state.role = "user";
       }
-    },
-  },
+    }
+  }
 });
 
 export const { setUser } = AuthSlice.actions;

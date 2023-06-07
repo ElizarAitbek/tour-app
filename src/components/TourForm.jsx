@@ -9,14 +9,14 @@ export const TourForm = ({ onClose, title }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors }
   } = useForm({
     defaultValues: {
       image: "",
       title: "",
       description: "",
-      price: "",
-    },
+      price: ""
+    }
   });
 
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ export const TourForm = ({ onClose, title }) => {
       image: data.image,
       title: data.title,
       description: data.description,
-      price: data.price,
+      price: data.price
     };
 
     dispatch(setTour(newTour));
@@ -41,12 +41,12 @@ export const TourForm = ({ onClose, title }) => {
         {...register("image", {
           required: {
             value: true,
-            message: "Ссылка на картинку обязательна для заполнения",
+            message: "Ссылка на картинку обязательна для заполнения"
           },
           minLength: {
             value: 5,
-            message: "Ссылка на картинку должна быть не менее 5 символов",
-          },
+            message: "Ссылка на картинку должна быть не менее 5 символов"
+          }
         })}
         placeholder="Ссылка на картинку"
       />
@@ -55,12 +55,12 @@ export const TourForm = ({ onClose, title }) => {
         {...register("title", {
           required: {
             value: true,
-            message: "Название тура обязательно для заполнения",
+            message: "Название тура обязательно для заполнения"
           },
           minLength: {
             value: 5,
-            message: "Название тура должно быть не менее 5 символов",
-          },
+            message: "Название тура должно быть не менее 5 символов"
+          }
         })}
         placeholder="Название тура"
       />
@@ -69,12 +69,12 @@ export const TourForm = ({ onClose, title }) => {
         {...register("description", {
           required: {
             value: true,
-            message: "Описание тура обязательно для заполнения",
+            message: "Описание тура обязательно для заполнения"
           },
           minLength: {
             value: 5,
-            message: "Описание тура должно быть не менее 5 символов",
-          },
+            message: "Описание тура должно быть не менее 5 символов"
+          }
         })}
         placeholder="Описание тура"
       />
@@ -83,12 +83,12 @@ export const TourForm = ({ onClose, title }) => {
         {...register("price", {
           required: {
             value: true,
-            message: "Цена тура обязательна для заполнения",
+            message: "Цена тура обязательна для заполнения"
           },
           minLength: {
             value: 5,
-            message: "Цена тура должна быть не менее 5 символов",
-          },
+            message: "Цена тура должна быть не менее 5 символов"
+          }
         })}
         type="number"
         placeholder="Цена тура"
