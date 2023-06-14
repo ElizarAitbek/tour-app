@@ -19,7 +19,10 @@ export const Sidebar = () => {
 const StyledSidebar = styled.section`
   padding: 50px 10px;
   background-color: #333;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
 `;
 
 const StyledSidebarContent = styled.section`

@@ -22,6 +22,7 @@ const StyledHeader = styled.header`
   padding: 0 20px;
   height: 50px;
   background-color: #ffffff;
+
   border-bottom: 1px solid #333;
   & > p {
     text-align: center;

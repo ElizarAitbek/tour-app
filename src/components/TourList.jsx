@@ -22,13 +22,7 @@ export const TourList = ({ tours, user }) => {
               <h3>{tour.title}</h3>
               <p>{tour.description}</p>
               <span>{tour.price} сом</span>
-              {user ? (
-                <></>
-              ) : (
-                <button onClick={() => deleteTourHandler(tour.id)}>
-                  Удалить
-                </button>
-              )}
+              {!user && <button onClick={() => deleteTourHandler(tour.id)}>Удалить</button>}
             </TourCard>
           );
         })
