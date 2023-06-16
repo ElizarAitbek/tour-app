@@ -4,6 +4,6 @@
 
 redux toolkit + react router v6.11 
 
-anything@gmail.com - user
-admin@gmail.com  - admin 
-superadmin@gmail.com - superadmin
+- anything@gmail.com - user
+- admin@gmail.com  - admin 
+- superadmin@gmail.com - superadmin
